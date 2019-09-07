@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share_text_to_wechat"
+        app:showAsAction="ifRoom|withText"
+        android:title="Share text to Wechat"
+        android:visible="true" />
+    <item
+        android:id="@+id/share_pics_to_wechat"
+        app:showAsAction="ifRoom|withText"
+        android:title="Share pictures to Wechat"
+        android:visible="true" />
+    <item
+        android:id="@+id/share_to_weibo"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/share_to_weibo"
+        android:visible="true" />
+    <item
+        android:id="@+id/share_to_QQ"
+        app:showAsAction="ifRoom|withText"
+        android:title="Share to QQ"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_remove_tab"
+        app:showAsAction="ifRoom|withText"
+        android:title="@string/remove_tab"
+        android:visible="true" />
+</menu>

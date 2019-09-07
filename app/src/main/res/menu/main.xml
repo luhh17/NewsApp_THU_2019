@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_addCategory"
+        android:orderInCategory="100"
+        android:title="@string/action_addCategory"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_searchKeyword"
+        android:orderInCategory="100"
+        android:title="@string/action_searchKeyword"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_clearKeyword"
+        android:orderInCategory="100"
+        android:title="@string/action_clearKeyword"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_blockWord"
+        android:orderInCategory="100"
+        android:title="@string/action_blockWord"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_clearBlock"
+        android:orderInCategory="100"
+        android:title="Clear Block"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_cleanCache"
+        android:orderInCategory="100"
+        android:title="@string/action_cleanCache"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_upload"
+        android:orderInCategory="100"
+        android:title="Upload"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item
+        android:id="@+id/action_download"
+        android:orderInCategory="100"
+        android:title="Download"
+        app:showAsAction="never"
+        android:visible="false" />
+</menu>

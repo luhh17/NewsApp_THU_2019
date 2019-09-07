@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">TamHou_News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Anonymous User</string>
+    <string name="nav_header_subtitle">anonymous.user@newsapp.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_addCategory">Add Category</string>
+    <string name="action_searchKeyword">Search Keyword</string>
+    <string name="action_clearKeyword">Clear Keyword</string>
+    <string name="action_blockWord">Block</string>
+    <string name="action_cleanCache">Clean Cache</string>
+    <string name="action_sync">Sync</string>
+
+    <string name="remove_tab">Remove Tab</string>
+    <string name="share_to_wechat">Share to Wechat</string>
+    <string name="share_to_wechat_moments">Share to Moments</string>
+    <string name="share_to_weibo">Share to Weibo</string>
+
+    <string name="menu_home">Top Stories</string>
+    <string name="menu_recommendation">Recommendation</string>
+    <string name="menu_favorites">My Favorites</string>
+    <string name="menu_seen">Seen</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+
+    <!-- Strings for items in activity_main_drawer.xml -->
+    <string-array name="main_titles">
+        <item>@string/fragment_news_0</item>
+        <item>@string/fragment_news_1</item>
+        <item>@string/fragment_news_2</item>
+        <item>@string/fragment_news_3</item>
+        <item>@string/fragment_news_4</item>
+        <item>@string/fragment_news_5</item>
+        <item>@string/fragment_news_6</item>
+        <item>@string/fragment_news_7</item>
+        <item>@string/fragment_news_8</item>
+        <item>@string/fragment_news_9</item>
+        <item>@string/fragment_news_10</item>
+    </string-array>
+    <string name="fragment_news_0">All Topics</string>
+    <string name="fragment_news_1">Entertainment</string>
+    <string name="fragment_news_2">Military</string>
+    <string name="fragment_news_3">Education</string>
+    <string name="fragment_news_4">Culture</string>
+    <string name="fragment_news_5">Health</string>
+    <string name="fragment_news_6">Business</string>
+    <string name="fragment_news_7">Sport</string>
+    <string name="fragment_news_8">Car</string>
+    <string name="fragment_news_9">Tech</string>
+    <string name="fragment_news_10">Society</string>
+
+    <string name="error">Error</string>
+</resources>

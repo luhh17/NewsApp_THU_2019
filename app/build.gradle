@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.example.newsapp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //==========
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //高级的recyclerview
+    implementation 'com.jude:easyrecyclerview:4.4.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //rxjava
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    //jsoup网页解析
+    implementation 'org.jsoup:jsoup:1.8.3'
+    implementation 'org.sufficientlysecure:html-textview:1.3'
+    //==============================================================
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //Image
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //Network
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    //Times Formater
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation files('libs/commons-beanutils-1.9.4.jar')
+    implementation files('libs/commons-collections4-4.4.jar')
+    implementation files('libs/commons-collections-3.2.1-1.0.0.jar')
+    implementation files('libs/commons-lang-2.4.jar')
+    implementation files('libs/commons-logging-1.1.1.jar')
+    implementation files('libs/ezmorph-1.0.6.jar')
+    implementation files('libs/json-20180813.jar')
+    implementation files('libs/json-lib-2.4-jdk15.jar')
+    // leancloud 服务器
+    implementation ('cn.leancloud:storage-android:5.0.23'){
+        exclude group: 'com.alibaba', module: 'fastjson'
+        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
+    }
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
+    //implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+    implementation 'com.github.8tory:wechat-android-sdk:-SNAPSHOT'
+}
